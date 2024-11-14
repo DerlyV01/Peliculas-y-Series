@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+
+/* Estilos básicos para animación de desplazamiento hacia arriba */
+header{
+    opacity: 0;
+    transform: translateY(30px); /* Comienza desplazado hacia abajo */
+    animation: slide-up 0.8s ease-out forwards; /* Aplica la animación */
+  }
+  
+  /* Configuración de la animación para la seccion */
+  header {
+    animation-delay: 0.2s;
+  }
+  
+  /* Definición de la animación slide-up */
+  @keyframes slide-up {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Se desplaza a su posición original */
+    }
+  }
+
+
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: url("../multimedia/logo1.2.png");
+    background-size: cover;
+    padding-top: 50px;
+    position: relative;
+    justify-content: center;
+}
+
+header nav{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul a{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 8px 10px;
+
+}
+
+nav ul a:hover{
+    border-bottom: 4px solid rgb(255, 255, 255);
+    
+}
+
+.search-container {
+    background-color: transparent ;
+    display: flex;
+    cursor: pointer;
+}
+.search-container input[type="text"]{ 
+    font-size: 20px;
+    border: 0px; 
+}
+
+
+#hero{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 220px;
+}
+
+
+#hero button{
+    padding: 10px  50px;
+    background: rgb(158, 73, 73);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 28px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    margin-top: 350px;
+    cursor: pointer;
+}
+
+#hero button:hover{
+    background: transparent;
+    border: 2px solid rgb(255, 247, 247);
+    color: rgb(255, 255, 255);
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+#planes{
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 0%;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+#planes h2{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+#planes p{
+    width: 600px;
+    text-align: left;
+    color: #ddd;
+}
+
+#planes .fila{
+    width: 100%;
+    display: flex;
+    margin-top: -5px;
+    justify-content: space-around;
+
+}
+
+
+#planes article{
+    position: relative;
+
+}
+
+
+#planes article.img_overview img{
+    width: 165px;
+    height: 140px ;
+    
+}
+
+#planes article.img_overview img:hover{
+  filter: grayscale(1);
+}
+
+#planes article h3{
+    position:absolute;
+    color: rgb(255, 255, 255);
+    top: 130px;
+    text-align: center;
+    width: 100%;
+
+}
+
+#destinos{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    padding: 10px 0 40px;
+    background: url(../multimedia/fondoseccion3.png);
+    background-size: cover;
+}
+
+#destinos h2{
+    color: white;
+    font-size: 50px;
+    
+}
+
+#destinos .fila{
+    display: flex;
+    justify-content: center;
+}
+
+#destinos article{
+    margin: 30px 120px;
+    width: 180px;
+}
+
+#destinos h3{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+}
+
+#destinos article.catalogo img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; 
+
+}
+
+#destinos article.catalogo img:hover{
+    transform: scale(0.95); 
+    cursor: pointer;
+}
+
+/* Contenedor de las tarjetas */
+.movies-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 50px;
+    scroll-behavior: smooth;
+  }
+  
+  .movie-card {
+    min-width: 200px;
+    height: 300px;
+    background-color: #ddd;
+    transition: transform 0.3s ease; 
+  }
+  
+  .movie-card:hover {
+    transform: scale(0.95); 
+    cursor: pointer;
+  }
+
+  #contacto h2{
+    color: #ddd;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  #series h2{
+    color: #ddd;
+    font-size: 45px;
+    text-align: center;
+    
+  }
+footer{
+    width: 100%;
+    padding: 10PX 0;
+    background: black;
+    color: white;
+    text-align: center;
+
+}
